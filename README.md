@@ -4,7 +4,7 @@ This is a simple and stylish portfolio/personal site featuring a video backgroun
 
 ## Features
 
-- Fullscreen video background
+- Fullscreen video background from Pixabay
 - Responsive YouTube video embed
 - Contact form that sends messages via EmailJS
 - Modern pixel font and clean color scheme
