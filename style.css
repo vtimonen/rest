@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    background-color: #0a2a43;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.3rem 2rem;
+}
+
+.header-content ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.first {
+    position: relative;
+    height: 100vh;
+}
+
+.first p {
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    max-width: 1000px;
+    color: white;
+    font-size: 6rem;
+    font-weight: 700;
+    z-index: 10;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.chill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    color: #fff;
+    text-align: left;
+}
+
+.chill-text {
+    flex: 1 1 400px;
+    max-width: 600px;
+}
+
+.chill-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.chill-video iframe {
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16/9;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.message {
+    justify-content: center;
+    text-align: center;
+    background-color: #222;
+    padding: 1rem 0;
+}
+
+.message-text {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+form {
+    max-width: 400px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    background: #222;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    font-family: inherit;
+    resize: none;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0a2a43;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .first p {
+        font-size: 2.5rem;
+        top: 100px;
+        left: 50px;
+    }
+}

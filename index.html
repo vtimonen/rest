@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="pixel/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="pixel/favicon-16x16.png">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="header-content">
+            <h1>HOME</h1>
+            <div class="nav">
+                <ul>
+                    <li><a href="#coffee">Warm</a></li>
+                    <li><a href="#coffee">cup</a></li>
+                    <li><a href="#coffee">of</a></li>
+                    <li><a href="#coffee">coffee</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="first">
+                <video autoplay muted loop>
+                    <source src="164386-830461339.mp4">
+                </video>
+
+                <p>You deserve some rest.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="chill" id="coffee">
+                <div class="chill-text">
+                    <h2>Take a moment for yourself</h2>
+                </div>
+                <div class="chill-video"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/g64BkZjSNBM?si=Q62Yhoo4QGBCF0CY" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="message">
+                <div class="message-text">
+                    <h2>What's on your mind</h2>
+                </div>
+                <div class="message-form">
+                    <form id="contact-form">
+                        <label for="nickname">Nickname</label><br />
+                        <input type="text" id="nickname" name="nickname" required /><br /><br />
+
+                        <label for="message">Message</label><br />
+                        <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2025 kthon</p>
+        </footer>
+    </main>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "LCrbQUQgFR3_9cG1J"
+            });
+        })();
+    </script>
+    <script src="email-send.js"></script>
+
+</body>
+
+</html>
