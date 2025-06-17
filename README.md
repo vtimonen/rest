@@ -1,6 +1,6 @@
 # Pixel - Personal Website
 
-This is a simple and stylish portfolio/personal site featuring a video background, an embedded YouTube video, and a contact form powered by EmailJS.
+This is a simple site featuring a video background, an embedded YouTube video, and a contact form powered by EmailJS.
 
 ## Features
 
