@@ -2,12 +2,12 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     event.preventDefault();
 
     const nickname = document.getElementById('nickname').value;
-    const messageRaw = document.getElementById('message').value;
-    const messageHTML = messageRaw.replace(/\n/g, '<br>');
+    const message = document.getElementById('message').value;
+    
 
     emailjs.send("service_lybqj5r", "template_9f3y2i7", {
         nickname: nickname,
-        message: messageHTML
+        message: message
     })
         .then(function () {
             alert("Thank you for your message!");
