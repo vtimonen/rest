@@ -20,6 +20,10 @@ This is a simple site featuring a video background, an embedded YouTube video, a
 
 - Optimize video and other media files for faster loading.
 
+## Screenshot
+
+![vtimonen github io_rest_screenshot](https://github.com/user-attachments/assets/37d8e085-4bd5-453a-9b72-2f195080b966)
+
 ---
 
 Thank you for checking out the project!
