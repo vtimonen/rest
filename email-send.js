@@ -2,7 +2,7 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
     event.preventDefault();
 
     const nickname = document.getElementById('nickname').value;
-    const message = document.getElementById('message').value;
+    const messageRaw = document.getElementById('message').value;
     const messageHTML = messageRaw.replace(/\n/g, '<br>');
 
     emailjs.send("service_lybqj5r", "template_9f3y2i7", {
